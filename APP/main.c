@@ -1,37 +1,3 @@
-/*
- * main.c
- *
- *  Created on: 4/8/2026
- *      Author: Marwa
- */
-
-/*
-
- * main_keypad_arm.c
- *
- * Single AVR: Controls a robotic arm with 4 servos using the KPD 4x4 keypad.
- *   - 1 base servo        -> left/right rotation
- *   - 2 arm servos        -> move together for forward/backward reach
- *   - 1 gripper servo     -> catch/release toggle
- *
- * LCD shows the current action.
- *
- * Keypad layout (from KPD_config.h):
- *      7  8  9  /
- *      4  5  6  *
- *      1  2  3  -
- *      C  0  =  +
- *
- * Key mapping used here:
- *   '8' -> Forward   (arm servos 1 & 2 together, PD5/OC1A + PD4/OC1B)
- *   '2' -> Backward  (arm servos 1 & 2 together, PD5/OC1A + PD4/OC1B)
- *   '4' -> Left      (base servo, PB3 / OC0)
- *   '6' -> Right     (base servo, PB3 / OC0)
- *   '5' -> Catch/Release toggle (gripper servo, PD7 / OC2)
- *
- *      Author: Marwa
- */
-
 #include "../LIB/STD_TYPES.h"
 #include "../LIB/BIT_MATH.h"
 #include <util/delay.h>
