@@ -1,10 +1,3 @@
-/*
-* EEPROM_Program.c
-*
-*  Created on: Sep 11, 2025
-*      Author: Dell
-*/
-
 //LIB
 #include "../LIB/STD_TYPES.h"
 #include "../LIB/BIT_MATH.h"
